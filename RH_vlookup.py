@@ -9,8 +9,6 @@ df2 = pd.read_excel(excel_file, sheet_name="Master CVE")
 df1 = pd.read_excel(excel_file, sheet_name="Security Updates")
 df3 = pd.read_excel(excel_file, sheet_name="Sheet1")
 
-#mastercve_sheet2 = pd.read_excel(excel_file, sheet_name=1, index_col=0)
-
 df4 = df1.merge(df2, on='Details', how='left')
 
 # SAVE TO A .XLSX
